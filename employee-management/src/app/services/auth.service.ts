@@ -31,7 +31,7 @@ http = inject(HttpClient);
   }
 
   get isLoggedIn(): boolean {
-    return typeof window !== "undefined" && localStorage.getItem("token") !== null;
+    return typeof window !== "undefined" && !! localStorage.getItem('token');
   }
   
   get isAdmin(): boolean {
