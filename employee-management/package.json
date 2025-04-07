@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:ssr": "ng build && ng run employee-management:server:production",
-    "serve:ssr:employee-management": "node dist/employee-management/server/server.mjs"
+    "start:ssr": "node dist/employee-management/server/server.mjs"
   },
   "private": true,
   "dependencies": {
